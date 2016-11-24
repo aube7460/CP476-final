@@ -1,0 +1,82 @@
+html {
+	background:#fdf5e8;
+}
+
+#results{
+	position:absolute;
+	bottom:0px;
+	right: 0px;
+}
+
+#pagecount{
+	position: fixed;
+	top: 2%;
+	left: 17%;
+	color:#fdf5e8;
+}
+
+#BookInformation{
+	position: fixed;
+	top: 2%;
+	left: 17%;
+}
+
+#bookPages{
+	background-image: url(../images/BookBackground1.png);
+	background-size: 100%;
+	position:absolute;
+	top:0px;
+	right:3.5%;
+}
+
+#pageleft{
+	padding-bottom: 5px;
+	padding-left: 17px;
+	padding-top:5px;
+}
+
+#pageright{
+	padding-bottom:5px;
+	padding-right:17px;
+	padding-top:5px;
+}
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:15%;
+	background-color:darkgray;
+	height:100%;
+	position:fixed;
+	overflow:auto;
+}
+li{
+	display:block;
+	color: white;
+	padding:10px;
+}
+
+li:hover{
+	background-color:gray;
+	color:white;
+}
+input.search{
+	padding:5px;
+	width:14.3%;
+}
+
+h3{
+	font-family:"Book Antiqua";
+	font-size:13pt;
+}
+
+h4{
+	font-family:"Cambria";
+	font-size:10pt;
+}
+
+h5{
+	font-family:"Segoe UI";
+	font-size:7pt;
+}

@@ -1,0 +1,48 @@
+html {
+	background:#fdf5e8;
+}
+body {
+	text-align:center;
+}
+input[type=button]{
+	background:#81D8D0;
+	color:white;
+	width:175px;
+	padding:15px;
+	border:none;
+}
+
+input[type=button]:hover{
+	background:#77CEC6;
+}
+
+input[type=text]{
+	padding:15px;
+	padding-bottom:15px;
+}
+
+input[type=password]{
+	padding:15px;
+	padding-bottom:15px;
+}
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:15%;
+	background-color:darkgray;
+	height:100%;
+	position:fixed;
+	overflow:auto;
+}
+li{
+	display:block;
+	color: white;
+	padding:5px;
+}
+
+li:hover{
+	background-color:gray;
+	color:white;
+}

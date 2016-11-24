@@ -1,0 +1,76 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookStyle.xsl"?>
+<!DOCTYPE bookshelf SYSTEM "book.dtd">
+
+<bookshelf>	
+<book>
+	<author>Stephen King</author>
+	<title>The Bazaar of Bad Dreams</title>
+	<genre>Horror</genre>
+	<publisher>Scribner</publisher>
+	<publishdate>2015</publishdate>	
+</book>
+<book>
+	<author>Markus Zusak</author>
+	<title>The Book Thief</title>
+	<genre>Historical Fiction</genre>
+	<publisher>Knopf</publisher>
+	<publishdate>2006</publishdate>	
+</book>
+<book>
+	<author>Jim Lynch</author>
+	<title>The Highest Tide</title>
+	<genre>Drama</genre>
+	<publisher>Bloomsbury</publisher>
+	<publishdate>2006</publishdate>	
+</book>
+<book>
+	<author>Nicolo Machiavelli</author>
+	<title>The Prince</title>
+	<genre>Non-Fiction</genre>
+	<publisher>Antonio Blado d'Asola</publisher>
+	<publishdate>1532</publishdate>	
+</book>
+<book>
+	<author>Bertrand Russell</author>
+	<title>The Problems of Philosophy</title>
+	<genre>Philosophy</genre>
+	<publisher>unknown</publisher>
+	<publishdate>1912</publishdate>	
+</book>
+<book>
+	<author>Friedrich Nietzsche</author>
+	<title>Beyond Good and Evil</title>
+	<genre>Philosophy</genre>
+	<publisher>PressBooks.com</publisher>
+	<publishdate>1886</publishdate>	
+</book>
+<book>
+	<author>E. M. Forster</author>
+	<title>A room with a view</title>
+	<genre>Romance</genre>
+	<publisher>PressBooks.com</publisher>
+	<publishdate>1908</publishdate>	
+</book>
+<book>
+	<author>Michael Bray</author>
+	<title>Forgotten Fears</title>
+	<genre>Horror</genre>
+	<publisher>CreateSpace Independent Publishing Platform</publisher>
+	<publishdate>2015</publishdate>	
+</book>
+<book>
+	<author>Franz Hafka</author>
+	<title>Metamorphosis</title>
+	<genre>Fantasy</genre>
+	<publisher>Kurt Wolff Verlag, Leipzig</publisher>
+	<publishdate>1915</publishdate>	
+</book>
+<book>
+	<author>Susanna Daniel</author>
+	<title>Sea Creatures</title>
+	<genre>Action</genre>
+	<publisher>Harper.HarperCollins</publisher>
+	<publishdate>2013</publishdate>	
+</book>
+</bookshelf>

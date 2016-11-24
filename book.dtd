@@ -1,0 +1,10 @@
+<!-- book.dtd -->
+
+<!ELEMENT bookshelf (book+)>
+<!ELEMENT book (author, title, genre, publisher, publishdate)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT genre(#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT publishdate (#PCDATA)>
+

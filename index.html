@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="./css/index.css">
+<title>The Den of Scrolls</title>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+					
+function inUser(){
+	var uname = $('#createuser').val();
+	var pw = $('#createpw').val();
+	var cmpw = $('#confirmpw').val();				
+
+	if (pw == cmpw){
+	$.ajax({
+		type: "POST",
+		url: "insertUser.php",
+		cache: false,
+		data: {createuser:uname,createpw:pw}
+		}).done(function(data){
+			window.location.href = "main.php";
+		});			
+	}else{
+		$("#divMsg").html("Passwords do not match");
+	}
+}
+
+function logUser(){
+	var usLogin = $('#loginuser').val();
+	var pwLogin = $('#loginpw').val();
+
+	$.ajax({
+		type: "POST",
+		url: "login.php",
+		cache: false,
+		data: {loginuser:usLogin,loginpw:pwLogin}
+		}).done(function(data){
+			if (data == 1){
+				window.location.href = "main.php";
+			}else{
+				$("#divMsg2").html("Account not found");
+			}
+		})			
+}
+	
+function showCForm(){
+	document.getElementById("showCreate").style.display="none";
+	document.getElementById("showLogin").style.display="inline-block";
+	document.getElementById("create").style.display="block";
+	document.getElementById("login").style.display="none";
+}
+function showLForm(){
+	document.getElementById("showCreate").style.display="inline-block";
+	document.getElementById("showLogin").style.display="none";
+	document.getElementById("create").style.display="none";
+	document.getElementById("login").style.display="block";
+	document.getElementById("login").style.paddingBottom="10px";
+}
+</script>
+</head>
+	
+<body>
+	<h1 style="font-family:Book Antiqua">The Den of Scrolls</h1>
+	<img src="images/den1.jpg">
+	<h3 style="font-family:Book Antiqua">Don't leave your library at home!</h3>
+		
+	<form id="create" action="" style="display:none;">
+		<div id="divMsg"></div>
+		<input type="text" id="createuser" placeholder="username"><br>
+		<input type="password" id="createpw" placeholder="password"><br>
+		<input type="password" id="confirmpw" placeholder="re-type password"><br>
+		<input type="button" name="createbutton" value="Create" style="padding-bottom=10px" onclick="inUser()"/>
+	</form>
+		
+	<form id="login" action="" style="display:none;">
+		<div id="divMsg2"></div>
+		<input type="text" id="loginuser" placeholder="username"><br>
+		<input type="password" id="loginpw" placeholder="password"><br>
+		<input type="button" name="loginbutton" value="Login" onclick="logUser()"/>
+	</form>
+		
+	<input type="button" id="showCreate" value="Create an account" onclick="showCForm();"><br>
+	<input type="button" id="showLogin" value="Already a user? Login" onclick="showLForm();"/>	
+		
+</body>
+</html>
